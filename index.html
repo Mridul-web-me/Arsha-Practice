@@ -16,7 +16,7 @@
     <header>
         <div class="container">
         <!-- Navbar -->
-        <nav>
+        <nav id="myHeader">
             <div class="logo">
                 <a href="#">Arsha</a>
             </div>
@@ -67,17 +67,117 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 anime">
                         <img src="img/hero-img.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
     </header>
+
+
+    <!----------
+         Main 
+    ------------->
     
+    <main>
+
+        <!-- -----
+            Clients 
+        ---------->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-1.png" alt=""></div>
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-2.png" alt=""></div>
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-3.png" alt=""></div>
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-4.png" alt=""></div>
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-5.png" alt=""></div>
+                <div class="col-lg-2"><img class="img-fluid" src="img/clients/client-6.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p><i class="fas fa-check-double"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p> <i class="fas fa-check-double"></i>Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                <p><i class="fas fa-check-double"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span>01</span> Non consectetur a erat nam at lectus urna duis?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <span>02</span> Feugiat scelerisque varius morbi enim nunc?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <span>03</span> Dolor sit amet consectetur adipiscing elit?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/why-us.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
 
 
 <script type="text/javascript">
+// Sticky Header
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
 function toggle(){
     var trailer = document.querySelector(".trailer");
     var video = document.querySelector("video");
@@ -86,6 +186,7 @@ function toggle(){
     video.currentTime = 0;
 }
 </script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
